@@ -8,13 +8,13 @@
 import Foundation
 
 // MARK: - News
-struct News: Codable {
+struct NewsResponse: Codable {
     let articles: [Article]?
 }
 
 // MARK: - Article
 struct Article: Codable, Identifiable {
-    var id = UUID()
+    let id = UUID()
     let author: String?
     let url: String?
     let source, title, description: String?

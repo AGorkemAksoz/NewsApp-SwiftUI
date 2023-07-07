@@ -51,6 +51,6 @@ struct ErrorView: View {
 
 struct ErrorView_Previews: PreviewProvider {
     static var previews: some View {
-        ErrorView(error: APIError.decodingError, handler: {})
+        ErrorView(error: APIError.unknown, handler: {})
     }
 }
